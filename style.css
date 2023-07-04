@@ -1,0 +1,101 @@
+/* Root Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+h1{
+    color:#8a14d3e9 ;
+    padding: 200px 0px 0px 0px;
+    font-size: 50px;
+}
+h1:hover{
+    color: #fff;
+}
+
+/* Applying css to Body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #34331d5a;
+
+}
+
+/* Applying css to Wrapper class */
+.Wrapper {
+    user-select: none;
+}
+
+/* Applying css to time class which is inside Wrapper class */
+.Wrapper .time {
+    height: 100px;
+    background: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 10px 10px 10px;
+    padding: 0 10px;
+}
+
+/* Applying css to the span elements of the time class */
+.Wrapper .time span {
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Css for the colon's of the time class */
+.time span.colon {
+    width: 10px;
+}
+
+/* css for the milliseconds */
+.time span.ms-colon,
+.time span.milliseconds {
+    color: #7d2ae8;
+}
+
+
+/* Styling Buttons */
+
+/* css for the buttons of the wrapper class */
+.Wrapper .buttons {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* css for the button elements of the Buttons class */
+.buttons button {
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #cecece;
+    background: #7021ac;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 10px 10px 20px;
+}
+
+/* css when button is clicked/ Start or Stop */
+.buttons button.active,
+.buttons button.stopActive {
+    pointer-events: none;
+    opacity: 0.7;
+}
